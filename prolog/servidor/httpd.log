@@ -1,0 +1,49 @@
+server(started, 1718517696).
+/*Sun Jun 16 00:01:35 2024*/ request(1, 1718517695.804, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('e7c54e6b-4619-400b-880b-67c3f00dfe40'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 69, 500, error("Arguments are not sufficiently instantiated")).
+server(stopped, 1718517714).
+server(started, 1718517720).
+/*Sun Jun 16 00:01:59 2024*/ request(1, 1718517719.649, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('57783843-1d0a-4b20-bd37-1f0225c30d72'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.03125, 69, 500, error("Arguments are not sufficiently instantiated")).
+server(stopped, 1718517726).
+server(started, 1718517730).
+/*Sun Jun 16 00:02:10 2024*/ request(1, 1718517730.034, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('9f0a5277-48ab-4c8d-a587-ef2e569dd9f3'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.03125, 69, 500, error("Arguments are not sufficiently instantiated")).
+server(stopped, 1718517743).
+server(started, 1718517748).
+/*Sun Jun 16 00:02:27 2024*/ request(1, 1718517747.521, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('cb4052bd-ee38-4995-b416-0dc512508673'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 69, 500, error("Arguments are not sufficiently instantiated")).
+server(stopped, 1718517757).
+server(started, 1718517761).
+/*Sun Jun 16 00:02:40 2024*/ request(1, 1718517760.756, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('01c4f70d-4e69-4f1e-a53f-2d68b5f9f653'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 69, 500, error("Arguments are not sufficiently instantiated")).
+server(stopped, 1718517780).
+server(started, 1718517785).
+/*Sun Jun 16 00:03:04 2024*/ request(1, 1718517784.534, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('d66e8def-cc77-43c3-8aad-0020b3009905'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 19, 200, ok).
+server(stopped, 1718517845).
+server(started, 1718517852).
+/*Sun Jun 16 00:04:11 2024*/ request(1, 1718517851.917, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('37404742-ddac-449e-aab7-b6c6bf98da56'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.03125, 55, 500, error("Illegal HTTP parameter: _5246")).
+server(stopped, 1718517874).
+server(started, 1718517878).
+/*Sun Jun 16 00:04:38 2024*/ request(1, 1718517878.074, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('64efd188-2ab1-4f7c-b155-218a32edfb81'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 55, 500, error("Illegal HTTP parameter: _5246")).
+/*Sun Jun 16 00:04:40 2024*/ request(2, 1718517880.325, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('747e1b5c-706f-4cbf-be90-1e9895cd1044'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(2, 0.0, 55, 500, error("Illegal HTTP parameter: _6558")).
+/*Sun Jun 16 00:04:42 2024*/ request(3, 1718517882.615, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('e344aa31-c805-4455-b656-0899c72aeb7e'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(3, 0.0, 55, 500, error("Illegal HTTP parameter: _6558")).
+server(stopped, 1718517913).
+server(started, 1718517918).
+/*Sun Jun 16 00:05:17 2024*/ request(1, 1718517917.570, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('a0c5d343-d220-4dbe-ba0a-b5b62fc4f0a3'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.03125, 55, 500, error("Illegal HTTP parameter: false")).
+server(stopped, 1718518149).
+server(started, 1718518185).
+/*Sun Jun 16 00:09:45 2024*/ request(1, 1718518185.095, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('2cc77b1d-8a91-4c0e-9cd2-a7154c0be5f1'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.04687500000000001, 54, 500, error("Illegal HTTP parameter: true")).
+server(stopped, 1718518216).
+server(started, 1718518220).
+/*Sun Jun 16 00:10:20 2024*/ request(1, 1718518220.281, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('fc3aa692-1673-4139-bdc1-4e322d0292f9'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(1, 0.015625, 185, 200, ok).
+/*Sun Jun 16 00:11:07 2024*/ request(2, 1718518267.329, [peer(ip(127,0,0,1)),method(post),request_uri('/playHamming'),path('/playHamming'),http_version(1-1),content_type('application/json'),user_agent('PostmanRuntime/7.39.0'),postman_token('b18b2408-0f58-4960-9b75-6fde8898b8c5'),host(localhost),port(8000),connection('keep-alive'),content_length(112)]).
+completed(2, 0.0, 34, 200, ok).
