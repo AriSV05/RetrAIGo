@@ -72,6 +72,18 @@ main {
     font-size: 24px;
 }
 
+.board-cost{
+    margin-top: 2.3vh;
+    font-size: 1.3vh;
+    border-bottom: #689c15 solid .3vh;
+    grid-column: 2;
+}
+
+.not-result{
+    font-size: 3vh;
+    border-bottom: #689c15 solid .3vh;
+}
+
 #message {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -91,6 +103,7 @@ main {
 .button-container {
     display: flex;
     width: 100%;
+    margin-top: 3vh;
     justify-content: space-around;
 }
 
