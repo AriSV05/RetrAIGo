@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetrAIGo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>RetrAIGo</h1>
+        <p>Initial state</p>
+    </header>
+    <main>
+        <div class="container"></div>
+        <div class="button-container">
+            <button class="button" id="infoBtn">?</button>
+            <button class="button" id="sendBtn">Send</button>
+        </div>
+    </main>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Instrucciones</h2>
+            <p>Seleccione el tablero que desea que sea el estado inicial.</p>
+        </div>
+    </div>
+
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Alert</h2>
+            <p>Debe seleccionar un tablero.</p>
+        </div>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

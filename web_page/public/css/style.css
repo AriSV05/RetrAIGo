@@ -1,0 +1,151 @@
+:root {
+    --main-text-color: rgb(248, 242, 242);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ------------------------------------------- */
+
+header {
+    color: var(--main-text-color);
+    background: url(/img/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Separación entre tableros */
+}
+
+/* ----------------------------------- */
+
+.puzzle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    margin-bottom: 10px; /* Espacio entre el tablero y el radio button */
+}
+
+.puzzle-piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7fbfd;
+    border: 1px solid #689c15;
+    font-size: 24px;
+}
+
+#message {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.empty {
+    background-color: #fff;
+    cursor: default;
+}
+
+.number-label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --------------------------------------- */
+
+footer {
+    color: var(--main-text-color);
+    background: url(/img/wood.jpg);
+    margin-top: 10px;
+    width: 100%;
+}
+
+
