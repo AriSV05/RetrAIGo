@@ -51,6 +51,11 @@ main {
     padding: 10px;
 }
 
+.puzzle-radio{
+    margin-top: 2.3vh;
+    grid-column: 2;
+}
+
 .puzzle-container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -100,6 +105,10 @@ main {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
+}
+
+.button:hover{
+    background-color: #159264;
 }
 
 .modal {
