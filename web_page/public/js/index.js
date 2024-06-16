@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".container");
+  const btnContainer = document.querySelector(".button-container");
   const title = document.getElementById("title");
   const infoBtn = document.getElementById("infoBtn");
   const sendHammi = document.getElementById("sendHammi");
@@ -160,18 +161,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function reloadPage(cost, allBoards, heuristic) {
     title.innerText = `Movements with ${heuristic}`;
-    
-    if(heuristic == "Manhattan"){
-      message.innerHTML = "El algoritmo de manhattan mide las distancias en una cuadrícula moviéndose solo horizontal y verticalmente."
-    }
-    else{
-      message.innerHTML = "El algoritmo de hamming mide las distancias contando cuantos elementos hay fuera de lugar en la secuencia."
+
+    if (heuristic == "Manhattan") {
+      message.innerHTML =
+        "El algoritmo de manhattan mide las distancias en una cuadrícula moviéndose solo horizontal y verticalmente.";
+    } else {
+      message.innerHTML =
+        "El algoritmo de hamming mide las distancias contando cuantos elementos hay fuera de lugar en la secuencia.";
     }
 
     while (container.firstChild) {
       container.removeChild(container.firstChild);
     }
 
+    const goBack = document.createElement("button");
+    goBack.className = "button";
+    goBack.innerHTML = "<<";
+
+    btnContainer.appendChild(goBack);
     sendHammi.remove();
     sendManh.remove();
 
@@ -205,10 +212,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else {
       const text = document.createElement("p");
-      text.className = "not-result"
+      text.className = "not-result";
       text.innerText = "No se puede resolver este tablero (￣▽￣)''";
       container.appendChild(text);
-      message.innerHTML = "Este tablero no se puede resolver ya que los movimientos necesarios para realizarse son impares, debido al algoritmo de counting inversions."
+      message.innerHTML =
+        "Este tablero no se puede resolver ya que los movimientos necesarios para realizarse son impares, debido al algoritmo de counting inversions.";
     }
+
+    goBack.addEventListener("click", () => {
+      location.reload();
+    });
   }
 });

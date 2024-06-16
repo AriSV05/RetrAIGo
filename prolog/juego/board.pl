@@ -111,7 +111,13 @@ get_goal(Goal) :-
 
 board_show2([], []).
 
-board_show2([Id|Ids], [L|Lista]) :- 
-	findall(Row, board_row(Id, _, Row), L),
+board_show2([Id|Ids], [L3|Lista]) :- 
+	findall([I, Row], board_row(Id, I, Row), L1),
+	sort(L1, L2),
+	remove_indices(L2,L3),
 	board_show2(Ids, Lista)
 .
+
+remove_indices([], []).
+remove_indices([[_, Row]|T], [Row|Lista]) :-
+    remove_indices(T, Lista).
