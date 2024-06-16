@@ -106,5 +106,12 @@ set_goal(Goal) :-
 . 
 
 get_goal(Goal) :-
-    board_goal(Goal)
+   board_goal(Goal)
+.
+
+board_show2([], []).
+
+board_show2([Id|Ids], [L|Lista]) :- 
+	findall(Row, board_row(Id, _, Row), L),
+	board_show2(Ids, Lista)
 .

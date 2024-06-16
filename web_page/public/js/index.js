@@ -68,30 +68,34 @@ document.addEventListener("DOMContentLoaded", () => {
       const selectedPuzzle = boards[selectedRadio.value];
 
       const filasFormateadas = selectedPuzzle.map((fila) => `[${fila.join(", ")}]`);
-
-      // Unir todas las filas formateadas con comas y rodear con corchetes externos
       const matrizFormateada = `[${filasFormateadas.join(", ")}]`;
 
-      fetch("http://localhost:8000/playManhattan", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json", 
-        },
-        body: JSON.stringify({ initial: matrizFormateada }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Success:", data);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-
-      //location.href ='../html/goal.html';
+      fetchManhattan(matrizFormateada)
     } else {
       alertModal.style.display = "block";
     }
   });
+
+  async function fetchManhattan(matrizFormateada) {
+    try {
+      const response = await fetch("http://localhost:8000/playManhattan", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ initial: matrizFormateada }),
+      });
+  
+      const allMovementsJson = await response.json();
+      allMovements = allMovementsJson.actions.map(item => item[0]);
+      const costs = allMovementsJson.actions.map(item => item[2]);
+  
+      fetchBoards(allMovements)
+      
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
 
   sendHammi.addEventListener("click", () => {
     const selectedRadio = document.querySelector(
@@ -102,28 +106,52 @@ document.addEventListener("DOMContentLoaded", () => {
       const selectedPuzzle = boards[selectedRadio.value];
 
       const filasFormateadas = selectedPuzzle.map((fila) => `[${fila.join(", ")}]`);
-
-      // Unir todas las filas formateadas con comas y rodear con corchetes externos
       const matrizFormateada = `[${filasFormateadas.join(", ")}]`;
 
-      fetch("http://localhost:8000/playHamming", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json", 
-        },
-        body: JSON.stringify({ initial: matrizFormateada }),
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Success:", data);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-        });
-
-      //location.href ='../html/goal.html';
+      fetchHamming(matrizFormateada)
+      
     } else {
       alertModal.style.display = "block";
     }
   });
+
+  
+  async function fetchHamming(matrizFormateada) {
+    try {
+      const response = await fetch("http://localhost:8000/playHamming", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ initial: matrizFormateada }),
+      });
+  
+      const allMovementsJson = await response.json();
+      allMovements = allMovementsJson.actions.map(item => item[0]);
+      const costs = allMovementsJson.actions.map(item => item[2]);
+  
+      fetchBoards(allMovements)
+      
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+
+  async function fetchBoards(allMovements){
+    try{
+      const boards = await fetch("http://localhost:8000/showBoards", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ allBoards: allMovements }),
+      });
+  
+      return allBoardsShow = await boards.json();
+    }
+    catch (error) {
+      console.error("Error:", error);
+    }
+
+  }
 });
