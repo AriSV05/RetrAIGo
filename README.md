@@ -8,6 +8,16 @@ UNA
 Esto es un juego de un puzzle de 8 piezas, se tienen 6 estados iniciales previamente cargados, cada uno de estos estados jugara hasta llegar al estado final [empty, 1, 2], [3, 4, 5], [6, 7, 8].
 Para esto, se utilizaron los algoritmo distancias Manhattan y Hamming, junto con el algoritmo Counting inversions.
 
+<details>
+  <summary>Imagen del sitio web</summary>
+  
+  ![RetrAIGO1](retroaigo_wepage_photos/Retro1.png)
+  ![RetrAIGO1](retroaigo_wepage_photos/Retro2.png)
+  ![RetrAIGO1](retroaigo_wepage_photos/Retro3.png)
+  ![RetrAIGO1](retroaigo_wepage_photos/Retro4.png)
+  ![RetrAIGO1](retroaigo_wepage_photos/Retro5.png)
+</details>
+
 # Descarga
 
 Se descarga la aplicación del drive del profesor en formato zip
